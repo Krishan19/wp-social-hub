@@ -1,18 +1,29 @@
 <?php
+
 /**
- * Plugin Name:       SaySocial	- Share Buttons
- * Plugin URI:        http://krishan19.com/wordpress/say-social/
+ * The plugin bootstrap file
+ *
+ * @link              http://krishan19.com/wordpress
+ * @since             1.0.0
+ * @package           Social_Hub
+ *
+ * @wordpress-plugin
+ * Plugin Name:       Social Hub
+ * Plugin URI:        http://krishan19.com/wordpress/
  * Description:       Just another social share plugin. Simple but flexible.
  * Version:           1.0.0
  * Author:            Krishan Fernando
  * Author URI:        http://krishan19.com
- * License:           GPLv2 or later
- * Text Domain:       sssb-say-social
+ * License:           GPL-2.0+
+ * License URI:       http://www.gnu.org/licenses/gpl-2.0.txt
+ * Text Domain:       social-hub
  * Domain Path:       /languages
  */
 
 // If this file is called directly, abort.
-defined( 'ABSPATH' ) or die();
+if ( ! defined( 'WPINC' ) ) {
+	die;
+}
 
 define('SSSB_FOLDER', dirname(plugin_basename(__FILE__)));
 define('SSSB_URL', plugin_dir_url(__FILE__));
@@ -43,6 +54,5 @@ if( is_admin() ) {
 	require_once( SSSB_FILE_PATH . 'class-admin-share-buttons.php' );
     new SSSB_AdminShareButtons();
 }
-
 
 

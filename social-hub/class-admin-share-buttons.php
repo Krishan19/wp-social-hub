@@ -31,8 +31,8 @@ class SSSB_AdminShareButtons {
     public function add_plugin_page()
     {
         add_menu_page(
-            'SaySocial - Share Buttons', 
-            'SaySocial', 
+            'Social Hub - Share Buttons', 
+            'Social Hub', 
             'manage_options', 
             'sssb-setting', 
             array( $this, 'create_admin_page' )
@@ -49,7 +49,7 @@ class SSSB_AdminShareButtons {
 
         ?>
         <div class="wrap">
-            <h1>SaySocial - Share Buttons</h1>
+            <h1>Social Hub - Share Buttons</h1>
             <form id="sssb_horizontal" method="post" action="options.php">
 	            <?php
 	                // This prints out all hidden setting fields
