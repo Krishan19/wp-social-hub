@@ -11,7 +11,7 @@
  * Plugin Name:       Social Hub
  * Plugin URI:        http://krishan19.com/wordpress/
  * Description:       Just another social share plugin. Simple but flexible.
- * Version:           1.0.0
+ * Version:           1.1.0
  * Author:            Krishan Fernando
  * Author URI:        http://krishan19.com
  * License:           GPL-2.0+

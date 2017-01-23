@@ -19,7 +19,9 @@ class SSSB_ShareButtons {
             'facebook' => 'Facebook',
             'twitter' => 'Twitter',
             'googleplus' => 'Google plus',
-            'linkedin' => 'LinkedIn'
+            'linkedin' => 'LinkedIn',
+            'pinterest' => 'Pinterest',
+            'tumblr' => 'Tumblr'
         ];
 
         update_option('sssb_social_networks', $social_networks);
@@ -102,6 +104,7 @@ class SSSB_ShareButtons {
         $url = apply_filters("the_permalink", get_permalink());
         $title = urlencode(get_the_title());
 
+
         switch ($social) {
             case 'facebook': 
                 // http://www.facebook.com/sharer/sharer.php?u=[URL]&title=[TITLE]
@@ -123,12 +126,19 @@ class SSSB_ShareButtons {
                 $link = 'http://www.linkedin.com/shareArticle?mini=true&url='. $url .'&title='. $title .'&source='. $blogUrl;
                 break;
 
+            case 'pinterest': 
+                // http://pinterest.com/pin/create/bookmarklet/?media=[MEDIA]&url=[URL]&is_video=false&description=[TITLE]
+                $link = 'http://pinterest.com/pin/create/bookmarklet/?url='. $url .'&is_video=false&description='. $title .'';
+                break;
+
+            case 'tumblr': 
+                // http://www.tumblr.com/share?v=3&u=[URL]&t=[TITLE]
+                $link = 'http://www.tumblr.com/share?v=3&u='. $url .'&t='. $title .'';
+                break;
+
             /*
 
             http://petragregorova.com/articles/social-share-buttons-with-custom-icons/
-            
-            Pinterest: 
-            http://pinterest.com/pin/create/bookmarklet/?media=[MEDIA]&url=[URL]&is_video=false&description=[TITLE]
 
             Reddit:
             http://www.reddit.com/submit?url=[URL]&title=[TITLE]
@@ -138,11 +148,6 @@ class SSSB_ShareButtons {
 
             Digg
             https://digg.com/submit?url=[URL]&title=[TITLE]
-
-
-            tumblr': 
-            http://www.tumblr.com/share?v=3&u=[URL]&t=[TITLE]
-
 
             blogger': 
             href="https://www.blogger.com/blog-this.g?u=''&n='&t=''" 

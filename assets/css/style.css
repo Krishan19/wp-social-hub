@@ -114,6 +114,24 @@
 	color: #007bb6;
 }
 
+/* pinterest */
+.sssb-style-1 .pinterest {
+	background: #c92619;
+}
+
+.sssb-style-1 .pinterest:hover {
+	color: #c92619;
+}
+
+/* tumblr */
+.sssb-style-1 .tumblr {
+	background: #45556c;
+}
+
+.sssb-style-1 .tumblr:hover {
+	color: #45556c;
+}
+
 
 /* ---- style-2 - horizontal  --- */
 .sssb-style-2 li a {
@@ -163,6 +181,24 @@
 
 .sssb-style-2 .linkedin:hover {
 	color: #007bb6;
+}
+
+/* pinterest */
+.sssb-style-2 .pinterest {
+	background: #c92619;
+}
+
+.sssb-style-2 .pinterest:hover {
+	color: #c92619;
+}
+
+/* tumblr */
+.sssb-style-2 .tumblr {
+	background: #45556c;
+}
+
+.sssb-style-2 .tumblr:hover {
+	color: #45556c;
 }
 
 
@@ -220,6 +256,24 @@
 	color: #007bb6;
 }
 
+/* pinterest */
+.sssb-style-3 .pinterest {
+	background: #c92619;
+}
+
+.sssb-style-3 .pinterest:hover {
+	color: #c92619;
+}
+
+/* tumblr */
+.sssb-style-3 .tumblr {
+	background: #45556c;
+}
+
+.sssb-style-3 .tumblr:hover {
+	color: #45556c;
+}
+
 
 /* ---- style-4 - horizontal  --- */
 .sssb-style-4 li {
@@ -275,6 +329,24 @@
 	color: #007bb6;
 }
 
+/* pinterest */
+.sssb-style-4 .pinterest {
+	background: #c92619;
+}
+
+.sssb-style-4 .pinterest:hover {
+	color: #c92619;
+}
+
+/* tumblr */
+.sssb-style-4 .tumblr {
+	background: #45556c;
+}
+
+.sssb-style-4 .tumblr:hover {
+	color: #45556c;
+}
+
 
 /* ---- style-5 - horizontal  --- */
 .sssb-style-5 li {
@@ -295,4 +367,22 @@
 
 .sssb-style-5 .linkedin:hover {
 	color: #007bb6;
+}
+
+/* pinterest */
+.sssb-style-5 .pinterest {
+	background: #c92619;
+}
+
+.sssb-style-5 .pinterest:hover {
+	color: #c92619;
+}
+
+/* tumblr */
+.sssb-style-5 .tumblr {
+	background: #45556c;
+}
+
+.sssb-style-5 .tumblr:hover {
+	color: #45556c;
 }
